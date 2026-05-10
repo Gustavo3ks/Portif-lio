@@ -1,39 +1,252 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio - Gustavo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gusatvo de Oliveira — Desenvolvedor Backend</title>
+
+
+  <link rel="preconnect" href="https://fon ts.googleapis.com"> 
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Gustavo Oliveira</h1>
-    <p>Desenvolvedor em formação</p>
-  </header>
+  <!-- TODO O HTML QUE JÁ EXISTE -->
+  <body>
 
-  <section class="projetos">
-    <h2>Meus Projetos</h2>
+<nav id="nav">
+  <a href="#" class="nav-logo">gustavo<em>.dev</em></a>
+  <ul class="nav-links">
+    <li><a href="#about">sobre</a></li>
+    <li><a href="#projects">projetos</a></li>
+    <li><a href="#learning">estudos</a></li>
+    <li><a href="#contact">contato</a></li>
+  </ul>
+  <div class="nav-badge">open to work</div>
+</nav>
 
-    <div class="cards">
+<section id="hero">
+  <div class="hero-layout">
+    <div>
+      <div class="hero-eyebrow">Estudante · ADS · Backend Dev</div>
+      <h1 class="hero-name">Olá,<br>sou <strong>Gustavo</strong></h1>
+      <p class="hero-role">// desenvolvedor back-end em formação</p>
+      <p class="hero-desc">
+        Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por construir o que o usuário nunca vê — mas sempre sente. Focado em <strong>back-end</strong>: lógica, APIs e bancos de dados bem modelados.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-fill">ver projetos</a>
+        <a href="#contact" class="btn btn-ghost">entrar em contato</a>
+      </div>
+    </div>
 
-      <div class="card">
-        <h3>🔒 Sistema de Denúncias Anônimas</h3>
-        <p>Plataforma para envio de denúncias anônimas com foco em privacidade do usuário.</p>
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="t-dot t-dot-r"></div>
+        <div class="t-dot t-dot-y"></div>
+        <div class="t-dot t-dot-g"></div>
+        <span class="terminal-title">~/gustavo $ bash</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-prompt">$ </span><span class="t-cmd">whoami</span></div>
+        <div><span class="t-green">gustavo</span> <span class="t-muted">— backend dev</span></div>
+        <br>
+        <div><span class="t-prompt">$ </span><span class="t-cmd">cat skills.txt</span></div>
+        <div><span class="t-blue">linguagens &nbsp;</span><span class="t-white">Java · C# </span></div>
+        <div><span class="t-blue">bancos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="t-white">MySQL · PostgreSQL</span></div>
+        <div><span class="t-blue">infra &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="t-white">Git · Docker (aprendendo)</span></div>
+        <div><span class="t-blue">padrões &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="t-white">REST</span></div>
+        <br>
+        <div><span class="t-prompt">$ </span><span class="t-cmd">cat status.txt</span></div>
+        <div><span class="t-amber">cursando &nbsp;&nbsp;&nbsp;</span><span class="t-white">ADS — 4º semestre</span></div>
+        <div><span class="t-green">objetivo &nbsp;&nbsp;&nbsp;</span><span class="t-white">primeira vaga back-end</span></div>
+        <div><span class="t-green">projetos &nbsp;&nbsp;&nbsp;</span><span class="t-white">2 no GitHub</span></div>
+        <br>
+        <div><span class="t-prompt">$ </span><span class="t-cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="botoes">
-          <a href="https://gustavo3ks.github.io/Teste-de-Site-de-Denuncias/" target="_blank">Ver Projeto</a>
-          <a href="https://github.com/Gustavo3ks/Teste-de-Site-de-Denuncias" target="_blank">Código</a>
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <p class="section-num">// 01 &nbsp;·&nbsp; sobre</p>
+      <h2 class="section-title">Quem sou eu</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Tenho <strong>20 anos</strong> e estou no <strong>4º semestre de Análise e Desenvolvimento de Sistemas</strong>. Desde o começo do curso, me apaixonei pelo back-end — a parte que ninguém vê, mas que sustenta tudo.</p>
+        <p>Enquanto a maioria dos estudantes fica no tutorial, prefiro <strong>quebrar a cabeça em projetos reais</strong>: construir APIs do zero, modelar bancos de dados, entender por que uma query é lenta e como corrigir isso.</p>
+        <p>Sei que ainda tenho muito a aprender, e é exatamente isso que me motiva. Busco minha <strong>primeira oportunidade como desenvolvedor back-end</strong> — um ambiente onde eu possa crescer rápido, contribuir de verdade e aprender com quem já tem experiência.</p>
+        <div class="skills-section">
+          <p class="skills-title">// nível de conforto</p>
+          <div class="skills-list" id="skills-list">
+            <div class="skill-row"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" data-w="40"></div></div><span class="skill-level">iniciante</span></div>
+            <div class="skill-row"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-w="45"></div></div><span class="skill-level">iniciante</span></div>
+            
+            <div class="skill-row"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" data-w="47"></div></div><span class="skill-level">iniciante</span></div>
+            <div class="skill-row"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div><span class="skill-level">bom</span></div>
+            <div class="skill-row"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" data-w="35"></div></div><span class="skill-level">aprendendo</span></div>
+          </div>
         </div>
       </div>
+      <div class="reveal">
+        <div class="study-card">
+          <p class="study-card-label">formação</p>
+          <p class="study-card-title">Análise e Desenvolvimento de Sistemas</p>
+          <p class="study-card-sub">Fatec - Itapetininga · 2024 — 2027</p>
+          <div class="progress-label"><span>progresso</span><span id="prog-pct">0%</span></div>
+          <div class="progress-bar"><div class="progress-fill" id="prog-fill" data-w="66"></div></div>
+        </div>
+        <div class="study-card">
+          <p class="study-card-label">localização</p>
+          <p class="study-card-title">Itapetininga], SP</p>
+          <p class="study-card-sub">disponível p/ remoto · híbrido · presencial</p>
+        </div>
+        <div class="study-card">
+          <p class="study-card-label">interesses</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.5rem;">
+            <span class="stack-pill">APIs REST</span>
+            <span class="stack-pill">microservices</span>
+            <span class="stack-pill">banco de dados</span>
+            <span class="stack-pill">clean code</span>
+            <span class="stack-pill">open source</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <p class="section-num">// 02 &nbsp;·&nbsp; projetos</p>
+      <h2 class="section-title">O que construí</h2>
+    </div>
+    <div class="projects-grid">
+
+      <a href="#" class="proj-card proj-highlight wide reveal">
+        <p class="proj-num">projeto principal · 01</p>
+        <h3 class="proj-title">API REST de produtos</h3>
+        <p class="proj-desc">API desenvolvida em sala de aula, utilizando a IDE Spring Tool Suit 4, Swagger, desenvolvimento foi feito com a linguagem java.</p>
+        <div class="proj-stack">
+          <span class="stack-pill">Spring Tool Suit 4</span>
+          <span class="stack-pill">MySQL</span>
+          <span class="stack-pill">Swagger</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">↗ GitHub</a>
+          <a href="#" class="proj-link">↗ Documentação</a>
+        </div>
+      </a>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 - Gustavo Oliveira</p>
-  </footer>
+<section id="learning">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <p class="section-num">// 03 &nbsp;·&nbsp; estudos</p>
+      <h2 class="section-title">O que estou aprendendo</h2>
+    </div>
+    <div class="learning-grid">
+      <div class="learn-card reveal">
+        <div class="learn-icon">🐳</div>
+        <p class="learn-title">Docker & Containers</p>
+        <p class="learn-sub">docker · docker-compose</p>
+        <span class="learn-status status-doing">▶ em andamento</span>
+      </div>
+      <div class="learn-card reveal">
+        <div class="learn-icon">☕</div>
+        <p class="learn-title">Spring Boot</p>
+        <p class="learn-sub">spring boot · hibernate · JPA</p>
+        <span class="learn-status status-doing">▶ em andamento</span>
+      </div>
+      <div class="learn-card reveal">
+        <div class="learn-icon">🧪</div>
+        <p class="learn-title">Testes Automatizados</p>
+        <p class="learn-sub">JUnit · pytest · TDD</p>
+        <span class="learn-status status-doing">▶ em andamento</span>
+      </div>
+      <div class="learn-card reveal">
+        <div class="learn-icon">🗄️</div>
+        <p class="learn-title">PostgreSQL Avançado</p>
+        <p class="learn-sub">índices · explain · otimização</p>
+        <span class="learn-status status-done">✓ recente</span>
+      </div>
+      <div class="learn-card reveal">
+        <div class="learn-icon">☁️</div>
+        <p class="learn-title">AWS Fundamentos</p>
+        <p class="learn-sub">EC2 · S3 · RDS</p>
+        <span class="learn-status status-next">→ próximo</span>
+      </div>
+      <div class="learn-card reveal">
+        <div class="learn-icon">📐</div>
+        <p class="learn-title">Clean Architecture</p>
+        <p class="learn-sub">SOLID · design patterns</p>
+        <span class="learn-status status-next">→ próximo</span>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <p class="section-num">// 04 &nbsp;·&nbsp; contato</p>
+      <h2 class="section-title">Vamos conversar</h2>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-copy reveal">
+        <p>Estou à procura da minha <strong>primeira oportunidade</strong> como desenvolvedor back-end — seja estágio ou júnior. Se você tem uma vaga, um projeto ou só quer trocar uma ideia sobre tecnologia, é só me chamar.</p>
+        <div class="contact-list">
+          <a href="gustavo.oliveira.cttpessoal@gmail.com" class="contact-item">
+            <div class="contact-item-icon">✉</div>gustavo.oliveira.cttpessoal@gmail.com
+          </a>
+          <a href="http://linkedin.com/in/gustavo-oliveira-1b4584409" target="_blank" class="contact-item">
+            <div class="contact-item-icon">in</div>linkedin.com/in/gustavo-oliveira
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-item">
+            <div class="contact-item-icon">⌥</div>github.com/gustavo
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-area reveal">
+        <div class="form-group">
+          <label class="form-label">nome</label>
+          <input type="text" class="form-input" placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+          <label class="form-label">e-mail</label>
+          <input type="email" class="form-input" placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">mensagem</label>
+          <textarea class="form-textarea" placeholder="Olá! Tenho uma oportunidade..."></textarea>
+        </div>
+        <button class="form-submit" onclick="this.textContent='✓ mensagem enviada!';this.style.background='var(--green)'">
+          enviar mensagem →
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Gustavo de Oliveira&nbsp;·&nbsp; Estudante de ADS</p>
+  <p>feito com HTML, CSS, JavaScript & vontade de aprender</p>
+</footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
